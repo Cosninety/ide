@@ -32,6 +32,12 @@
         #visualization {
             margin-top: 20px;
             border: 1px solid #ccc;
+            width: 600px;
+            height: 400px;
+        }
+        #error-message {
+            color: red;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -41,7 +47,8 @@
     <textarea id="prompt" placeholder="Describe what you want..."></textarea>
     <button id="generate">Generate Code</button>
     <div id="code-output"></div>
-    <canvas id="visualization" width="600" height="400"></canvas>
+    <canvas id="visualization"></canvas>
+    <div id="error-message"></div>
 
     <script src="script.js"></script>
 </body>
